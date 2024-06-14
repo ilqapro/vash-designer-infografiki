@@ -150,3 +150,32 @@ h1 {
 	border: 1px solid #000;
 	max-width: 100%;
 }
+.imaga.transformed .default {
+	display: none;
+}
+.imaga .transform {
+	display: none;
+}
+.imaga.transformed .transform {
+	display: block;
+	animation: 10s fff forwards;
+}
+.imaga .aaa {
+	animation: 1s aaa forwards linear;
+}
+@keyframes fff {
+	from {
+		transform: scale(0.9);
+	}
+	to {
+		transform: scale(2);
+	}
+}
+@keyframes aaa {
+	from {
+		transform: 0;
+	}
+	to {
+		transform: rotate(5000deg);
+	}
+}
